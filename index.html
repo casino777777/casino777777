@@ -106,13 +106,13 @@
         let order = document.getElementById("order");
         tg.expand();
 
-        tg.getUserInfo().then(user => {
-            buy.addEventListener("click", () => {
+        
+        buy.addEventListener("click", () => {
                 document.getElementById("main").style.display = "none";
                 document.getElementById("form").style.display = "block";
                 document.getElementById("user_name").value = user.first_name + ' ' + user.last_name;
-            });
         });
+        
 
         order.addEventListener("click", () => {
             document.getElementById("error").innerText = '';
