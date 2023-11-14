@@ -113,36 +113,36 @@
         })
 
         order.addEventListener("click", () => {
-        document.getElementById("error").innerText = '';
+            document.getElementById("error").innerText = '';
 
-        let name = document.getElementById("user_name").value;
-        let email = document.getElementById("user_email").value;
-        let phone = document.getElementById("user_phone").value;
+            let name = document.getElementById("user_name").value;
+            let email = document.getElementById("user_email").value;
+            let phone = document.getElementById("user_phone").value;
 
-        if (name.length < 5) {
-            document.getElementById("error").innerText = 'Ошибка в имени';
-            return;
-        }
+            if (name.length < 5) {
+                document.getElementById("error").innerText = 'Ошибка в имени';
+                return;
+            }
 
-        if (email.length < 5) {
-            document.getElementById("error").innerText = 'Ошибка в email';
-            return;
-        }
+            if (email.length < 5) {
+                document.getElementById("error").innerText = 'Ошибка в email';
+                return;
+            }
 
-        if (phone.length < 5) {
-            document.getElementById("error").innerText = 'Ошибка в телефоне';
-            return;
-        }
+            if (phone.length < 5) {
+                document.getElementById("error").innerText = 'Ошибка в телефоне';
+                return;
+            }
 
-        let data = {
-            name: name,
-            email: email,
-            phone: phone
-        }
+            let data = {
+                name: name,
+                email: email,
+                phone: phone
+            }
 
-        // Assuming tg is defined and has sendData and close methods
-        tg.sendData(JSON.stringify(data));
-        tg.close();
+            // Assuming tg is defined and has sendData and close methods
+            tg.sendData(JSON.stringify(data));
+            tg.close();
         });
     </script>
     
