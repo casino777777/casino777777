@@ -14,7 +14,7 @@
 
 
 
-I am a Full Stack Developer <img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="30"> from Ukrainian.
+<img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="300">
 <!--
 **casino777777/casino777777** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
